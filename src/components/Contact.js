@@ -35,7 +35,8 @@ function Contact() {
       <TopNav />
       <div className="contact-page">
         <section className="contact-hero">
-          <h1>Help</h1>
+          <h2 className="hero-subtitle">AFYA Support</h2>
+          <h1>HELP CENTER</h1>
         </section>
 
         <div className="contact-content">
