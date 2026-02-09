@@ -45,39 +45,27 @@ function Footer() {
           </div>
 
           <div className="footer-section">
-            <h4>Tools</h4>
+            <h4>Platform</h4>
             <ul>
+              <li><a href="/hub">The Hub</a></li>
               <li><a href="/workout-generator">Workout Generator</a></li>
               <li><a href="/meal-plan-generator">Meal Plan Creator</a></li>
-              <li><a href="/hub">The Hub</a></li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4>Resources</h4>
+            <h4>Learn</h4>
             <ul>
               <li><a href="/education">Education</a></li>
-              <li><a href="/community">Community</a></li>
-              <li><a href="/help/topics">Help Topics</a></li>
-              <li><a href="/help/faq">FAQ</a></li>
+              <li><a href="/resources">Resources</a></li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4>Support</h4>
-            <ul>
-              <li><a href="/contact">Contact Us</a></li>
-              <li><a href="/contact/feedback">Send Feedback</a></li>
-              <li><a href="/help/topics">Help Center</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
-            <h4>Company</h4>
+            <h4>About</h4>
             <ul>
               <li><a href="/why-afya">Why AFYA</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/careers">Careers</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
         </div>

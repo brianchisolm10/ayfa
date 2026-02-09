@@ -85,9 +85,6 @@ function Education() {
   return (
     <>
       <TopNav />
-      <button className="back-to-dashboard-btn" onClick={() => navigate('/dashboard')}>
-        ← Back to Dashboard
-      </button>
       <div className="education-page">
         {!isClientView && (
           <section className="education-hero">

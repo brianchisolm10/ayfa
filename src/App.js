@@ -51,7 +51,6 @@ function HomePage() {
   return (
     <div className="App">
       <Hero onToolClick={handleToolClick} />
-      <CTA onToolClick={handleToolClick} />
       <Footer />
       
       {activeModal && (

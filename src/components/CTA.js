@@ -6,8 +6,8 @@ function CTA() {
     <section className="cta">
       <div className="cta-container">
         <div className="donate-section">
-          <p className="donate-text">Support our mission to make elite wellness accessible to everyone</p>
-          <a href="/community" className="donate-link">Join Our Community</a>
+          <p className="donate-text">Have feedback or questions? We'd love to hear from you</p>
+          <a href="/contact" className="donate-link">Send Us Feedback</a>
         </div>
       </div>
     </section>

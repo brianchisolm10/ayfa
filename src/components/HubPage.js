@@ -175,31 +175,6 @@ function HubPage() {
             </div>
           </div>
         </div>
-
-        <div className="signup-section">
-          <h2>Save & Continue Your Results</h2>
-          <p>Create an account to save your personalized programs and track your progress over time. Once you've signed up, you can access your saved workouts, meal plans, and progress tracking from anywhere. Pick up where you left off and keep moving toward your goals.</p>
-          
-          <div className="signup-actions">
-            <a href="/signup" className="btn-signup">Sign Up Now</a>
-            <p className="login-link">Already have an account? <a href="/login">Log in</a></p>
-          </div>
-
-          <div className="continue-features">
-            <div className="continue-feature">
-              <h4>Access Anytime</h4>
-              <p>View your programs on any device</p>
-            </div>
-            <div className="continue-feature">
-              <h4>Track Progress</h4>
-              <p>Monitor your fitness journey with detailed analytics</p>
-            </div>
-            <div className="continue-feature">
-              <h4>Personalized Updates</h4>
-              <p>Get recommendations based on your progress</p>
-            </div>
-          </div>
-        </div>
       </div>
       </div>
       <Footer />

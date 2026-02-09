@@ -22,8 +22,9 @@ body {
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  background: #e8dcc8;
 }
 
 /* Modal Styles */

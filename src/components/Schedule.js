@@ -25,7 +25,6 @@ function Schedule() {
     <>
       <TopNav />
       <div className="schedule-container">
-        <button className="back-button" onClick={() => navigate('/dashboard')}>← Back to Dashboard</button>
         
         <div className="schedule-header">
           <h1>My Programs</h1>

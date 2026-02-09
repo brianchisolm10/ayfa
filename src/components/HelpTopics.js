@@ -221,9 +221,6 @@ function HelpTopics() {
   return (
     <>
       <TopNav />
-      <button className="back-to-dashboard-btn" onClick={() => navigate('/dashboard')}>
-        ← Back to Dashboard
-      </button>
       <div className="help-page">
         <section className="help-hero">
           <h2 className="hero-subtitle">HELP CENTER</h2>

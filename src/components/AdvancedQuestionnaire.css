@@ -1,14 +1,22 @@
-/* Force cache bust - updated checkbox styling */
+/* Advanced Questionnaire - Landing Page Style */
 .questionnaire-container {
-  background: #e8dcc8;
-  min-height: 100vh;
-  padding: 40px 20px;
+  background: #f5f5f5 !important;
+  min-height: 100vh !important;
+  padding: 60px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  box-sizing: border-box !important;
 }
 
 .questionnaire-header {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto 40px;
   position: relative;
+  text-align: center;
 }
 
 .back-btn {
@@ -17,19 +25,18 @@
   padding: 10px 16px;
   font-size: 12px;
   font-weight: 400;
-  color: #e8dcc8;
+  color: #333;
   text-decoration: none;
-  background: #333;
-  border: 1px solid #333;
+  background: white;
+  border: 1px solid #d0ccc4;
   border-radius: 0;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .back-btn:hover {
-  background: #e8dcc8;
-  color: #333;
-  border-color: #333;
+  background: #f5f3f0;
+  border-color: #8B6F47;
 }
 
 .questionnaire-header h2 {
@@ -45,17 +52,19 @@
   color: #666;
   margin: 0;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 .questionnaire-form {
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
   background: white;
   border: 1px solid #d0ccc4;
   padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .question-block {
@@ -241,6 +250,18 @@
 }
 
 @media (max-width: 768px) {
+  .questionnaire-container {
+    padding: 20px;
+  }
+
+  .questionnaire-header {
+    margin-bottom: 30px;
+  }
+
+  .questionnaire-header h2 {
+    font-size: 22px;
+  }
+
   .questionnaire-form {
     padding: 24px;
     gap: 36px;
@@ -248,6 +269,16 @@
 
   .options-group {
     gap: 20px;
+  }
+
+  .option-label {
+    padding: 20px 24px;
+    min-height: auto;
+  }
+
+  .checkbox-button {
+    padding: 20px 24px;
+    min-height: auto;
   }
 
   .form-actions {

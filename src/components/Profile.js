@@ -42,9 +42,6 @@ function Profile() {
   return (
     <>
       <TopNav />
-      <button className="back-to-dashboard-btn" onClick={() => navigate('/dashboard')}>
-        ← Back to Dashboard
-      </button>
       <div className="profile-container">
         <div className="profile-header">
           <div className="profile-info">

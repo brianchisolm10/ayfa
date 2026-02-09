@@ -1,8 +1,8 @@
 .cta {
   max-width: 100%;
   margin: 0;
-  padding: 20px 50px 20px 50px;
-  background: #e8dcc8;
+  padding: 8px 50px 8px 50px;
+  background: transparent;
   flex-grow: 1;
 }
 
@@ -14,14 +14,14 @@
 
 .donate-section {
   background: transparent;
-  padding: 20px 40px;
-  margin-bottom: 20px;
+  padding: 4px 20px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  border: 1px solid #2a2a2a;
+  gap: 6px;
+  border: none;
   border-radius: 0;
   box-shadow: none;
   animation: slideInUp 0.6s ease-out;
@@ -29,7 +29,7 @@
 
 .donate-text {
   color: #2a2a2a;
-  font-size: 18px;
+  font-size: 12px;
   margin: 0;
   font-weight: 300;
   text-align: center;
@@ -38,10 +38,10 @@
 .donate-link {
   background: #2a2a2a;
   color: #e8dcc8;
-  padding: 12px 32px;
+  padding: 8px 20px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   transition: all 0.3s ease;
