@@ -1,22 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Contact.css';
 import TopNav from './TopNav';
 import Footer from './Footer';
 
 function Contact() {
-  const [searchQuery, setSearchQuery] = useState('');
   const [expandedFaq, setExpandedFaq] = useState(null);
   const [messageForm, setMessageForm] = useState({ email: '', message: '' });
   const [messageSent, setMessageSent] = useState(false);
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      // Navigate to help topics with search query
-      window.location.href = `/help/topics?search=${encodeURIComponent(searchQuery)}`;
-    }
-  };
 
   const toggleFaq = (index) => {
     setExpandedFaq(expandedFaq === index ? null : index);
@@ -44,98 +34,16 @@ function Contact() {
     <>
       <TopNav />
       <div className="contact-page">
-        {/* Dark Hero Section */}
         <section className="contact-hero">
           <h2 className="hero-subtitle">AFYA Support</h2>
           <h1>HELP CENTER</h1>
-          <div className="search-box">
-            <form onSubmit={handleSearch} className="search-form">
-              <input
-                type="text"
-                placeholder="How can we help?"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-              <button 
-                type="submit" 
-                className="search-btn"
-                style={{
-                  padding: '12px 20px',
-                  border: 'none',
-                  background: '#8B6F47',
-                  cursor: 'pointer',
-                  fontSize: '16px',
-                  color: 'white',
-                  borderRadius: '0',
-                  fontWeight: '600',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.5px'
-                }}
-              >
-                🔍
-              </button>
-            </form>
-          </div>
         </section>
 
-        {/* Main Content */}
         <div className="contact-content">
-          {/* Left Side - Help Topics */}
           <div className="help-topics">
-            <h3>HELP TOPICS</h3>
-            <div className="topics-grid">
-              <Link to="/help/topics" className="topic-card">
-                <h4>Workouts</h4>
-              </Link>
-              <Link to="/help/topics" className="topic-card">
-                <h4>Meal Plans</h4>
-              </Link>
-              <Link to="/help/topics" className="topic-card">
-                <h4>Account</h4>
-              </Link>
-              <Link to="/help/topics" className="topic-card">
-                <h4>Billing</h4>
-              </Link>
-              <Link to="/help/topics" className="topic-card">
-                <h4>Technical</h4>
-              </Link>
-              <Link to="/help/topics" className="topic-card">
-                <h4>General</h4>
-              </Link>
-            </div>
-
-            {/* Feedback Section */}
-            <div className="feedback-section">
-              <h3>SEND FEEDBACK</h3>
-              <p className="feedback-intro">Help us improve AFYA by sharing your thoughts and suggestions</p>
-              <div className="feedback-grid">
-                <Link to="/help/feedback" className="feedback-card">
-                  <div className="feedback-icon">💪</div>
-                  <h4>Product Feedback</h4>
-                  <p>Share ideas about workouts, meal plans, or features you'd like to see</p>
-                  <span className="feedback-link">Send Feedback →</span>
-                </Link>
-                <Link to="/help/feedback" className="feedback-card">
-                  <div className="feedback-icon">🌐</div>
-                  <h4>Website Feedback</h4>
-                  <p>Report bugs or suggest improvements to the AFYA website</p>
-                  <span className="feedback-link">Send Feedback →</span>
-                </Link>
-                <Link to="/help/feedback" className="feedback-card">
-                  <div className="feedback-icon">👨‍💻</div>
-                  <h4>Developer Feedback</h4>
-                  <p>Technical issues, performance concerns, or API feedback</p>
-                  <span className="feedback-link">Send Feedback →</span>
-                </Link>
-              </div>
-            </div>
-
             {/* FAQ Section */}
             <div className="faq-section">
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                <h3>FREQUENTLY ASKED</h3>
-                <Link to="/help/faq" style={{ fontSize: '12px', color: '#8B6F47', textDecoration: 'none', fontWeight: '600' }}>View All →</Link>
-              </div>
+              <h3>FREQUENTLY ASKED</h3>
               <div className="faq-list">
                 {[
                   { q: "How do I generate a workout?", a: "Click on \"Generate Workout\" from the hub, answer a quick 3-step questionnaire about your fitness level, goals, and available equipment, and we'll create a personalized program for you." },
@@ -166,7 +74,6 @@ function Contact() {
             </div>
           </div>
 
-          {/* Right Side - Contact Methods */}
           <aside className="contact-sidebar">
             <div className="contact-methods-container">
               <h3>CONTACT US</h3>
