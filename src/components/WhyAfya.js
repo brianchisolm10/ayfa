@@ -8,13 +8,6 @@ function WhyAfya() {
     <>
       <TopNav />
       <div className="why-afya-page">
-        {/* Hero Section */}
-        <section className="why-hero">
-          <h2 className="why-hero-subtitle">ABOUT AFYA</h2>
-          <h1 className="why-hero-title">Elite Fitness & Nutrition, Accessible to Everyone</h1>
-          <p className="why-hero-description">Science-backed programs, personalized for you, delivered instantly</p>
-        </section>
-
         {/* Our Beliefs */}
         <section className="why-beliefs">
           <div className="beliefs-container">
